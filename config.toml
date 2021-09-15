@@ -158,10 +158,10 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "inverted-logo.png"
+      logo = "https://i.imgur.com/OVETx1g.png"
       # title name
 #      name = " ZEYRIE"
-      name = "<span style='color: red;'>ZEYRIE's Blog</span>"
+      name = "<span style='color: red;'> ZEYRIE's Blog</span>"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
