@@ -1,3 +1,769 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+
+defaultContentLanguage = "en"
+
+languageCode = 'en'
+
+title = "Zeyrie's Blog"
+
+theme = "FeelIt"
+
+
+
+# whether to use robots.txt
+enableRobotsTXT = true
+
+# whether to use git commit log
+enableGitInfo = true
+
+# whether to use emoji code
+enableEmoji = true
+
+# UA-PROPERTY_ID or G-MEASUREMENT_ID google analytics code
+googleAnalytics = ""
+
+
+ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstoken"]
+
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "github"
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "https://github.com/khusika/FeelIt"
+    title = "GitHub"
+    weight = 6
+
+
+
+
+
+
+[params]
+  # FeelIt theme version
+  version = "1.0.X"
+  # site description
+  description = "Zeyrie's Blog, I will be posting Youtube Contents, Blogs, Articles, Ideas, and more content that I Learn."
+  # site keywords
+  keywords = ["Linux", "Technical", "Youtube", "Programming", "Python", "Window-Manager"]
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = ""
+  # FeelIt NEW | 0.1.1
+  # which hash function used for SRI, when empty, no SRI is used
+  # ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # FeelIt NEW | 0.2.0
+  # date format
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  # There was "/logo.png" down here !!!!!!!!!!!!!!!!!!!!!!!!
+  images = ["static/favicon.ico"]
+  # FeelIt NEW | 1.0.0
+  # whether to enable CSS and JS source mapping
+  SourceMap = true
+
+
+
+  # FeelIt NEW | 1.0.1
+  # PWA config
+  [params.pwa]
+    # whether to enable PWA support
+    enable = true
+    # service-worker version
+    version = "1.0.1"
+
+  # App icon config
+  [params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "Zeyrie"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = ""
+    # Android browser theme color
+    themeColor = "#ffffff"
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
+
+  # FeelIt NEW | 0.2.0
+  # Search config
+  [params.search]
+    enable = true
+    # type of search engine ("lunr", "algolia")
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # FeelIt NEW | 0.2.1
+    # max number of results length
+    maxResultLength = 10
+    # FeelIt NEW | 0.2.3
+    # snippet length of the result
+    snippetLength = 30
+    # FeelIt NEW | 0.2.1
+    # HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # FeelIt NEW | 0.2.4
+    # whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+
+  # Header config
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # FeelIt NEW | 0.2.0
+    # Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = "inverted-logo.png"
+      # title name
+#      name = " ZEYRIE"
+      name = "<span style='color: red;'>ZEYRIE's Blog</span>"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # FeelIt NEW | 0.2.5
+      # whether to use typeit animation for title name
+      typeit = true
+      # FeelIt NEW | 1.0.0
+      # whether to show RSS icon
+      rss = true
+
+  # Footer config
+  [params.footer]
+    enable = true
+    # FeelIt NEW | 0.2.0
+    # Custom content (HTML format is supported)
+    custom = ''
+    # FeelIt NEW | 0.2.0
+    # whether to show Hugo and theme info
+    hugo = false
+    # FeelIt NEW | 0.2.0
+    # whether to show copyright info
+    copyright = true
+    # FeelIt NEW | 0.2.0
+    # whether to show the author
+    author = true
+    # Site creation time
+    since = 2021
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # FeelIt NEW | 0.2.0
+  # Section (all posts) page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "Jan 2"
+    # amount of RSS pages
+    rss = 10
+
+  # FeelIt NEW | 0.2.0
+  # List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "Jan 2"
+    # amount of RSS pages
+    rss = 10
+
+
+
+  # FeelIt NEW | 1.0.2
+
+  [params.about]
+    # whether to enable profile on about page
+    # depends on .Site.Params.home.profile.enable
+    enable = true
+    # whether to enable param layout
+    param = true
+    # title for param layout
+    paramTitle = "Personal Information"
+    # general description of your site
+    # can be write with markdown style
+    description = "[FeelIt](https://github.com/khusika/FeelIt) is a **clean**, **elegant** but **advanced** blog theme for [Hugo](https://gohugo.io/) developed by [Khusika](https://khusika.com). It is based on the original [LoveIt Theme](https://github.com/dillonzq/LoveIt), [LeaveIt Theme](https://github.com/liuzc/LeaveIt), and [KeepIt Theme](https://github.com/Fastbyte01/KeepIt)."
+    # description of your status
+    [[params.about.status]]
+      faIcon = "fas fa-building"
+      title = "Company"
+      desc = "Zeyrie"
+    [[params.about.status]]
+      faIcon = "fas fa-briefcase fa-fw"
+      title = "Occupation"
+      desc = "Student"
+    [[params.about.status]]
+      title = "Location"
+      faIcon = "fas fa-map-marker-alt"
+      desc = "India"
+    # description of your parameter
+    [[params.about.parameter]]
+      language = "Python"
+      level = "80"
+    [[params.about.parameter]]
+      language = "Java"
+      level = "60"
+    [[params.about.parameter]]
+      language = "C"
+      level = "60"
+
+  # Home page config
+  [params.home]
+    # FeelIt NEW | 0.2.0
+    # amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "/images/author/main-logo.webp"
+      # FeelIt CHANGED | 0.2.7
+      # title shown in home page (HTML format is supported)
+      title = "<span style='color: #FF1E56;'> 127.0.0.1</span>"
+      # subtitle shown in home page
+      subtitle = "<span style='color: #FFAC41;'> If it works don't touch it!</span>"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # FeelIt NEW | 0.2.0
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      # FeelIt CHANGED | 1.0.1
+      # display image-preview
+      imagePreview = true
+      # FeelIt DELETED | 0.2.0
+      # replaced with hiddenFromHomePage in params.page
+      # default behavior when you don't set "hiddenFromHomePage" in front matter
+      defaultHiddenFromHomePage = false
+
+
+
+  # FeelIt CHANGED | 1.0.1
+  # oEmbed config
+  [params.oembed]
+    # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
+    privacy = false
+    [params.oembed.facebook]
+      # Facebook Aplication Identity and Client Token (<APPID>|<CLIENTTOKEN>)
+      accessToken = ""
+    [params.oembed.twitter]
+      enableDNT = false
+
+  # Social config about the author
+  [params.social]
+    Youtubechannel = "https://www.youtube.com/channel/UCKNl6QmOIfvAFwLgrF3SW7A"
+    Instagram = "https://www.instagram.com/i_am_an_arch_user/"
+    Linkedin = "https://www.linkedin.com/in/abilash-s-725a13184/"
+    GitHub = "https://github.com/abilash2574"
+    Twitter = ""
+    Facebook = ""
+    Telegram = ""
+    Medium = ""
+    Gitlab = "https://gitlab.com/zeyrie"
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    Email = "abilash2574@gmail.com"
+    Resume = "" #goo.gl id
+    xda = ""
+
+
+
+# FeelIt CHANGED | 0.2.0
+  # Page config
+  [params.page]
+    # FeelIt NEW | 0.2.0
+    # whether to hide a page from home page
+    hiddenFromHomePage = false
+    # FeelIt NEW | 0.2.0
+    # whether to hide a page from search results
+    hiddenFromSearch = false
+    # FeelIt NEW | 0.2.0
+    # whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    # FeelIt NEW | 0.2.0
+    # whether to enable the ruby extended syntax
+    ruby = true
+    # FeelIt NEW | 0.2.0
+    # whether to enable the fraction extended syntax
+    fraction = true
+    # FeelIt NEW | 0.2.0
+    # whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # FeelIt NEW | 1.0.0
+    # whether to use the fontawesome as cdn source
+    cdnfontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    # FeelIt NEW | 1.0.0
+    # whether to show link to improve the article
+    improveArticle = ""
+    # FeelIt NEW | 0.2.4
+    # whether to show the full text content in RSS
+    rssFullText = false
+    # FeelIt NEW | 0.2.0
+    # Table of the contents config
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # FeelIt NEW | 0.2.9
+      # whether to keep the static table of the contents in front of the post
+      keepStatic = true
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      auto = true
+    # FeelIt CHANGED | 0.2.0
+    # KaTeX mathematical formulas
+    [params.page.math]
+      enable = true
+      # default block delimiter is $$ ... $$ and \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # default inline delimiter is $ ... $ and \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX extension copy_tex
+      copyTex = true
+      # KaTeX extension mhchem
+      mhchem = true
+    # FeelIt NEW | 0.2.0
+    # Code config
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 10
+    # FeelIt NEW | 0.2.0
+    # Mapbox GL JS config
+    [params.page.mapbox]
+      # access token of Mapbox GL JS
+      accessToken = ""
+      # style for the light theme
+      lightStyle = "mapbox://styles/mapbox/light-v9"
+      # style for the dark theme
+      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      # whether to add NavigationControl
+      navigation = true
+      # whether to add GeolocateControl
+      geolocate = true
+      # whether to add ScaleControl
+      scale = true
+      # whether to add FullscreenControl
+      fullscreen = true
+    # FeelIt CHANGED | 0.2.0
+    # social share links in post page
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = true
+      Tumblr = false
+      HackerNews = true
+      Reddit = true
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = true
+      Instapaper = false
+      Pocket = false
+      Digg = false
+      Stumbleupon = false
+      Flipboard = false
+      Weibo = true
+      Renren = false
+      Myspace = true
+      Blogger = true
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = true
+      Skype = false
+      Trello = false
+      Mix = false
+
+
+
+
+
+# FeelIt CHANGED | 1.0.0
+  # Comment config
+    [params.page.comment]
+      enable = true
+      # Disqus comment config
+      [params.page.comment.disqus]
+        # FeelIt NEW | 0.1.1
+
+        enable = false
+        # Disqus shortname to use Disqus in posts
+        shortname = ""
+      # Vssue comment config (https://github.com/meteorlxy/vssue)
+      [params.page.comment.vssue]
+        # FeelIt NEW | 1.0.0
+
+        enable = false
+        # Vssue platform API ("bitbucket", "gitea", "gitee", "github", "github-v4", "gitlab")
+        platform = ""
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Gitalk comment config
+      [params.page.comment.gitalk]
+        # FeelIt NEW | 0.1.1
+
+        enable = false
+        owner = ""
+        repo = ""
+        clientId = ""
+        clientSecret = ""
+      # Valine comment config
+      [params.page.comment.valine]
+        enable = false
+        appId = ""
+        appKey = ""
+        placeholder = ""
+        avatar = "mp"
+        meta= ""
+        pageSize = 10
+        lang = ""
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        # FeelIt NEW | 0.2.6
+        # emoji data file name, default is "google.yml"
+        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+        # located in "themes/FeelIt/assets/data/emoji/" directory
+        # you can store your own data files in the same path under your project:
+        # "assets/data/emoji/"
+        emoji = ""
+      # Facebook comment config
+      [params.page.comment.facebook]
+        enable = false
+        width = "100%"
+        numPosts = 10
+        appId = ""
+        languageCode = ""
+      # FeelIt NEW | 0.2.0
+      # Telegram comments config
+      [params.page.comment.telegram]
+        enable = false
+        siteID = ""
+        limit = 5
+        height = ""
+        color = ""
+        colorful = true
+        dislikes = false
+        outlined = false
+      # FeelIt NEW | 0.2.0
+      # Commento comment config
+      [params.page.comment.commento]
+        enable = false
+      # FeelIt NEW | 0.2.5
+      # Utterances comment config
+      [params.page.comment.utterances]
+        enable = false
+        # owner/repo
+        repo = ""
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
+
+
+    #
+    # Third-party library config
+    [params.page.library]
+      [params.page.library.css]
+        # someCSS = "some.css"
+        # located in "assets/"
+        # Or
+        # someCSS = "https://cdn.example.com/some.css"
+      [params.page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/"
+        # Or
+        # someJavascript = "https://cdn.example.com/some.js"
+    #
+    # Page SEO config
+    [params.page.seo]
+      # image URL
+      images = []
+      # Publisher info
+      [params.page.seo.publisher]
+        name = "Zeyrie"
+        logoUrl = "/images/main-logo.webp"
+
+  #
+  # TypeIt config
+  [params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar = "|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration = -1
+
+  # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
+  [params.verification]
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+
+  #
+  # Site SEO config
+  [params.seo]
+    # image URL
+    image = ""
+    # thumbnail URL
+    thumbnailUrl = ""
+
+  #
+  # Analytics config
+  [params.analytics]
+    enable = false
+    #
+    # privacy of the Google Analytics (replaced by privacy.googleAnalytics)
+    [params.analytics.google]
+      # ...
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+    #
+    # GoatCounter Analytics
+    [params.analytics.goatcounter]
+      # GoatCounter code
+      code = ""
+
+  #
+  # Cookie consent config
+  [params.cookieconsent]
+    enable = true
+    # text strings used for Cookie consent banner
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
+  #
+  # CDN config for third-party library files
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ("jsdelivr.yml")
+    # located in "themes/FeelIt/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    data = ""
+
+  #
+  # Compatibility config
+  [params.compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill = false
+    # whether to use object-fit-images to be compatible with older browsers
+    objectFit = false
+
+# Markup related config in Hugo
+[markup]
+  # Syntax Highlighting
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
+    # false is a necessary configuration
+    # (https://github.com/khusika/FeelIt/issues/158)
+    noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
+  # Table Of Contents settings
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
+
+# Author config
+[author]
+  name = "Abilash S"
+  email = "abilash2574@gmail.com"
+  link = "https://www.zeyrie.in"
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks config
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+# Privacy config
+[privacy]
+  #
+  # privacy of the Google Analytics
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  #
+  # privacy of the Intagram (replaced by params.oembed.instagram)
+  [privacy.instagram]
+    # ...
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# Options to make output .md files
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
+
+# Minify config
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      # ignore the whitespace as we don't have text around the span tag (https://github.com/khusika/FeelIt/issues/40)
+      keepWhitespace = false
+
