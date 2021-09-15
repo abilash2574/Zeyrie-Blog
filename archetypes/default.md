@@ -1,6 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
+lastmod: {{ .Date }}
 draft: true
 author: "Abilash S"
 authorLink: "https://www.zeryie.in/"
@@ -14,5 +16,14 @@ resources:
 - name: featured-image-preview
   src: featured-image-preview.jpg
 
+toc:
+  enable: true
+math:
+  enable: false
+lightgallery: false
+license: ""
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
 ---
 
