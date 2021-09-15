@@ -509,9 +509,9 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
       [params.page.comment.disqus]
         # FeelIt NEW | 0.1.1
 
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
-        shortname = ""
+        shortname = "zeyrie"
       # Vssue comment config (https://github.com/meteorlxy/vssue)
       [params.page.comment.vssue]
         # FeelIt NEW | 1.0.0
