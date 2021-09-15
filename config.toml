@@ -20,7 +20,7 @@ enableGitInfo = true
 enableEmoji = true
 
 # UA-PROPERTY_ID or G-MEASUREMENT_ID google analytics code
-googleAnalytics = ""
+googleAnalytics = "G-5K0NH9DC3X"
 
 
 ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstoken"]
