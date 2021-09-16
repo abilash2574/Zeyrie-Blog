@@ -1,7 +1,7 @@
 ---
 title: "Basic Markdown Syntax"
 date: 2021-09-15T22:49:52+05:30
-lastmod: 2021-09-15T16:45:40+05:00
+lastmod: {{ .Lastmod }}
 draft: false
 author: "Abilash S"
 authorLink: "https://www.zeryie.in/"
