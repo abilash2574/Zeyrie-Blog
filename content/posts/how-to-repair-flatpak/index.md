@@ -7,7 +7,7 @@ author: "Abilash S"
 authorLink: "https://www.zeryie.in/"
 description:
 tags: ["linux", "flatpak"]
-categories: ["Linux", "Tutorial"]
+categories: ["Linux", "Tutorials"]
 
 resources:
 - name: featured-image
@@ -21,8 +21,9 @@ math:
   enable: false
 lightgallery: true
 license: ""
-hiddenFromHomePage: false hiddenFromSearch: false ---
-
+hiddenFromHomePage: false 
+hiddenFromSearch: false 
+---
 
 Installing software in linux can be tricky sometimes, especially when we are using the terminal. To solve this we got the GUI package installers, and one such installer is flatpak, which is quite easy to handle naturally. But this doesn't mean it won't get broken sometimes.
 
