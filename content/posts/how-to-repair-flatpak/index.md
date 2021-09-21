@@ -7,7 +7,7 @@ author: "Abilash S"
 authorLink: "https://www.zeryie.in/"
 description:
 tags: ["linux", "flatpak"]
-categories: ["Linux", "Tutorials"]
+categories: ["Linux" ]
 
 resources:
 - name: featured-image
