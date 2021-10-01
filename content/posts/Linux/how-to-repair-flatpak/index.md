@@ -11,7 +11,7 @@ categories: ["Linux", ]
 
 resources:
 - name: featured-image
-  src: featured-image.png
+  src: thumbnail_1.png
 - name: featured-image-preview
   src: thumbnail.jpg
 

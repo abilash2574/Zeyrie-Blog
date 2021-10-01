@@ -35,6 +35,7 @@ Cloud computing is defined as storing and accessing data, and computing services
 {{< /style >}}
 
 <!-- more -->
+<br>
 
 {{< style "text-align: justify; " >}}
 
@@ -58,7 +59,7 @@ At first there was the centralized computing method where a mainframe computer i
 
 {{< /style >}}
 
-{{< admonition example "Examples of Distributed Systems" >}}
+{{< admonition example "Examples of Distributed Systems" false >}}
 
   - Internet
   - ATM and bank machines
@@ -90,28 +91,41 @@ The users gain access to grid computing resources (processors, storage, data, ap
 
 {{< /style >}}
 
-#### Parallel Computing
+{{< admonition example "Examples of Grid Computing" false >}}
+- Reactor Applications
+- Detection and Modelling Natural disasters
+- Crystallography 
+- Weather Forecast
+
+{{< /admonition >}}
+
 
 #### Cluster Computing
 
+{{< style "text-align: justify; text-indent: 25px;" >}}
+
+A cluster is a type of parallel or distributed computer system, which consists of a collection of inter-connected stand-alone computers working together as a single integrated computing resource. Key components of a cluster include multiple standalone computers, operating systems, high-performance interconnects, middleware, parallel programming environments, and applications.
+
+{{< /style >}}
+
 #### Utility Computing
 
-#### Cloud Computing
+{{< style "text-align: justify; text-indent: 25px;" >}}
 
-### Grid Computing or Cloud Computing?
+Utility Computing is a service provisioning model in which a service provider makes computing resources and infrastructure management available to the customer as needed, and charges them for specific usage rather than a flat rate. This model has the advantage of a low or no initial cost to acquire computer resources; instead, computational resources are essentially rented. 
 
-Grid computing is often confused with cloud computing. Grid computing is a form of distributed computing that implements a virtual supercomputer made up of a cluster of networked or Internetworked computers acting in unison to perform very large tasks. But cloud computing should be seen as an evolved 
-
-
-
-
-
-
+{{< /style >}}
+<br>
+{{< style "text-align: justify; " >}}
+These can be computing services that are rented to users to use as per their needs and users pay as they consume the resource. Some typical similarities of this type of computing services can be power consumtions, mobile and internet services, as we pay for these services as we consume the resource
+{{< /style >}}
 
 
+## Cloud Computing
 
+{{< admonition quote "US NIST defines:" >}}
 
+Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g networks, servers, storage, applications, and servers) that can be rapidly provisioned and released with minimal management effort or provider interaction.
 
+{{< /admonition >}}
 
-<!-- Image by <a href="https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1989339">200 Degrees</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1989339">Pixabay</a> -->
-<!-- Photo by panumas nikhomkhai from Pexels -->
