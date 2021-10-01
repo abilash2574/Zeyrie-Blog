@@ -26,6 +26,10 @@ googleAnalytics = "G-5K0NH9DC3X"
 ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstoken"]
 
 
+# image preview size is 800 x 240
+# image size is 1420 x 708
+
+
 
 
 [menu]
