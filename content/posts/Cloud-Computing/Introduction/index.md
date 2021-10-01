@@ -51,7 +51,7 @@ The concept of cloud computing becomes more understandable when one begins to th
 At first there was the centralized computing method where a mainframe computer is connected to different sub terminals. There terminals are used to do tasks, which will be processed by the mainframe computer. With this method there were so many limitations and disadvantages that lead to the evolution of Distributed Computing.
 
 {{< /style >}}
-
+<br>
 {{< style "text-align: justify; " >}}
 
 **Distributed Computing** came along with the concept of networking, where it is defined as a network of autonomous computers that have their own local memory and processor, these computer communicate to each other to perform a single task or to solve a bunch of threads of a single process. 
@@ -83,15 +83,16 @@ Grid computing enables the virtualization of distributed computing and data reso
 To explain in simple terms, its a form of networking, unlike conventional networks that focus on communication among devices, grid computing harnesses unused processing cycles of all computers in a network for solving problems too intensive for any stand-alone machine.
 
 {{< /style >}}
-
+<br>
 {{< style "text-align: justify; " >}}
 
 The users gain access to grid computing resources (processors, storage, data, applications, and so on) as needed with little or no knowledge of where those resources are located or what the underlying technologies, hardware, operating sytems are. **The Grid** links together computing resources and provides the mechanism needed to access them to the users.
 
 {{< /style >}}
 
-#### Cluster Computing
+#### Parallel Computing
 
+#### Cluster Computing
 
 #### Utility Computing
 
