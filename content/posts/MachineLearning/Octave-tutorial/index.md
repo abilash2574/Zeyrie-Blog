@@ -307,4 +307,4 @@ Diagonal Matrix
 Thank you for reading till here, if you find this useful bookmark this. Kindly share this to your friends.
 {{< /admonition >}}
 
-The next part continuous [More Possibilities with octave](https://www.blogs.zeyrie.in/octave_tutorial/)
+The next part continuous [More Possibilities with octave](https://www.blogs.zeyrie.in/octave-tutorial-2/)

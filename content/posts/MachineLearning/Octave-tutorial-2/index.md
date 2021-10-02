@@ -27,7 +27,7 @@ hiddenFromHomePage: false
 hiddenFromSearch: false
 ---
 
-This is the continuation of [Basics of Octave](https://www.blogs.zeyrie.in/octave_tutorial/). In this blog we will look what are the possibilities of operations in octave. 
+This is the continuation of [Basics of Octave](https://www.blogs.zeyrie.in/octave-tutorial/). In this blog we will look what are the possibilities of operations in octave. 
 
 <!-- more -->
 
