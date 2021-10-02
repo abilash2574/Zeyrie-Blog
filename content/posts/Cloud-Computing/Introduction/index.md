@@ -280,3 +280,20 @@ It allows systems and services to be accessible by a group of organizations. It 
 
 {{< /style >}}
 
+
+
+---
+
+
+{{< admonition success  "Thank you for reading!" >}}
+
+Thank you for reading this post, If you find this useful, bookmark this page and share this with your friends.
+
+{{< /admonition >}}
+
+{{< admonition quote  "Reference" false >}}
+This post is written by referring different resources such as:
+[NPTEL Cloud Computing](https://youtu.be/NzZXz3fJf6o?list=PL-FqPEn1dZJDg-6LHNYnappA6DcXz3ieZ)
+
+Rittinghouse, John W., and James F. Ransome, "Cloud Computing: Implementation, Management and Security", CRC Press, 2017.
+{{< /admonition >}}
