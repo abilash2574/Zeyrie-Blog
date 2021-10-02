@@ -180,7 +180,103 @@ The scalability adds a cost-effectiveness aspect to the cloud technology. When t
 
 {{< /style >}}
 
-### Cloud Service Models
+## Cloud Service Models
 
-#### Software as a Service (SaaS)
+### Software as a Service (SaaS)
+
+{{< style "text-align: justify; " >}}
+
+Saas is also known as "**on-demand software**". Software as a service offers applications that are to be accessed over the web. These softwares are not managed by the consumer company, but by the service provider. This relieves the company from the constant pressure of software maintaince, infrastructure management, network security, data availability and other operational issues involved with keeping applications up and running.
+
+{{< /style >}}
+
+#### Characteristics of Saas
+
+- Managed from a central location
+- Hosted on a remote servers
+- Accessible over the internet
+- Users are not responsible for hardware and software updates. Updates are applied automatically
+- The services are purchased on the pay-as-per-use basics
+
+{{< admonition example "Examples " >}}
+BigCommerce, Google Apps, Salesforce, Dropbox, ZenDesk, Slack
+{{< /admonition >}}
+
+### Cloud Infrastructure as a Service (IaaS)
+
+{{< style "text-align: justify; " >}}
+
+IaaS offers the computing capabilities as per demand over the web. These resources can be storage facilities, networks, processing power, and virtual private servers. The main advantage of this service is that, the consumer can avoid the cost and complexity of purchasing and managing the physical servers. These will be billed under the factors such as how much storage you need, the amount of processing power you demand, power consumed over a timespan. In this service, the consumer do not have to worry about managing the infrastructure, it is up to the provider to guarantee the contracted amount of resources and availability to be provided. 
+
+{{< /style >}}
+
+#### Characteristics of IaaS
+
+- Resources are available as a service.
+- Services are highly scalable
+- Dynamic and flexible
+- GUI and API-based access
+- Automated administrative tasks
+
+{{< admonition example "Examples " >}}
+DigitalOcean, Linode, Amazon Web Services(AWS), Microsoft Azure, Google Compute Engine (GCE)
+{{< /admonition >}}
+
+### Platform as a Service (PaaS)
+
+{{< style "text-align: justify; " >}}
+
+Platform as a Service is halfway between the Infrastructure as a Service and Software as a Service. It offers access to a cloud-based environment in which users can build and deliver applications without the need of an IT infrastructure. This makes it easier and faster to develop, deploy and test applications. Developers can focus on writing code and create applications without worrying about the time consuming activities such as provisioning storage, network,and backups. It brings more value to the cloud and it can reduce the management overhead and lower the cost.
+
+{{< /style >}}
+
+#### Characteristics of PaaS
+
+- Accessible to various users via the same development application.
+- Integrates with web services and databases.
+- Builds on virtualization technology, so resources can easily be scaled up or down as per the need
+- Support multiple languages and frameworks.
+- Provide an ability to "**Auto-Scale**".
+
+{{< admonition example "Examples" >}}
+
+AWS Elastic Beanstalk, Windows Azure, Force.com, Google App Engine, OpenShift
+
+{{< /admonition >}}
+
+## Types of Cloud Deployment Models
+
+{{< image src="pics/cloud-deploy.png" caption="`Deployment Models`" width="80%">}}
+
+#### Public Clouds
+
+{{< style "text-align: justify; " >}}
+
+The public cloud makes it possible for anybody to access systems and services. The public cloud may be less secure as it is open for everyone. The public cloud is one in which cloud infrastructure services are provided over the internet to the general people or major industry groups. 
+
+{{< /style >}}
+
+#### Private Clouds 
+
+{{< style "text-align: justify; " >}}
+
+The private cloud deployment model is the exact opposite of the public cloud deployment model. It’s a one-on-one environment for a single user (customer). There is no need to share your hardware with anyone else. The distinction between private and public cloud is in how you handle all of the hardware. It is also called the “internal cloud” and it refers to the ability to access systems and services within a given border or organization. 
+
+{{< /style >}}
+
+#### Hybrid Clouds
+
+{{< style "text-align: justify; " >}}
+
+By bridging the public and private worlds with a layer of proprietary software, hybrid cloud computing gives the best of both worlds. With a hybrid solution, you may host the app in a safe environment while taking advantage of the public cloud’s cost savings. Organizations can move data and applications between different clouds using a combination of two or more cloud deployment methods, depending on their needs. 
+
+{{< /style >}}
+
+#### Community Clouds
+
+{{< style "text-align: justify; " >}}
+
+It allows systems and services to be accessible by a group of organizations. It is a distributed system that is created by integrating the services of different clouds to address the specific needs of a community, industry, or business. The infrastructure of the community could be shared between the organization which has shared concerns or tasks. It is generally managed by a third party or by the combination of one or more organizations in the community. 
+
+{{< /style >}}
 
