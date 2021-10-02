@@ -123,9 +123,64 @@ These can be computing services that are rented to users to use as per their nee
 
 ## Cloud Computing
 
+{{< style "text-align: justify; em {color: #FF7777;}" >}}
+
 {{< admonition quote "US NIST defines:" >}}
 
-Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g networks, servers, storage, applications, and servers) that can be rapidly provisioned and released with minimal management effort or provider interaction.
+Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of _configurable computing resources_ (e.g networks, servers, storage, applications, and servers) that can be rapidly provisioned and released with minimal management effort or provider interaction.
 
 {{< /admonition >}}
+
+{{< /style >}}
+
+### Characteristics of Cloud Computing
+
+###### On-demand self-service
+
+A cloud computing service are availabel on-demand and does not require much human interactive administators. The consumer himself can provision, manage, and monitor the resources as per his requirement.
+
+###### Broad network access
+
+Cloud computing is accessible from a network, generally over the internet, and can be accessed by a diverse customer platforms which are hetrogeneous. Similarly, private cloud servics can be accessed anywhere within the enterprise. The Network bandwidth and latency are very important aspects of cloud computing because they relate to the Quality of Service(QoS) of the network.
+
+###### Resource Pooling
+
+The providers computing resources such as servers, processors, storage, applicatoins, and services are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically addigned and reassigned as per the consumer need.
+
+###### Measured Service
+
+{{< style "text-align: justify; " >}}
+
+Cloud systems automatically control and optimize resources use by leveraging a metering capabilities at some level of abstraction to the type of service (e.g., storage, processing, bandwidth, and active user accounts). The utilization of resources is tracked, controlled and reported for each occupant. This gives transparency to both the service provider and the consumer. The cloud system has a metering capability, which is leveraged to monitor billing, use of resources, and pay only for what has been used.
+
+{{< /style >}}
+
+###### Rapid Elasticity
+
+{{< style "text-align: justify; " >}}
+
+Resource capabilities can be elastically provisioned and released to meet immediate requirements. Similarly, they can be removed or scaled down as per the need. In many cases, these can happen automatically in response to the business demands. This makes sure that the application has the capacity it needs at any point in time. To the consumer, the capabilities available for provisioning often appears to be unlimited and can be appropriated in any quality at any time.
+
+The scalability adds a cost-effectiveness aspect to the cloud technology. When the demand or workload is high, more servers can be added for that particular period.
+
+{{< /style >}}
+
+### Common Characteristics
+
+{{< style "text-align: justify; strong{color: #51C4D3;}" >}}
+
+1. **Massive Scale** - 
+2. **Resilient Computing** - 
+3. **Homogeneity** - 
+4. **Geographic Distribution** - 
+5. **Virtualization**
+6. **Service orientation** - 
+7. **Low Cost Software** - 
+8. **Advanced Security** - 
+
+{{< /style >}}
+
+### Cloud Service Models
+
+#### Software as a Service (SaaS)
 

@@ -417,7 +417,7 @@ ignoreErrors = ["err-missing-comment-accesstoken", "err-missing-oembed-accesstok
     linkToMarkdown = true
     # FeelIt NEW | 1.0.0
     # whether to show link to improve the article
-    improveArticle = "https://github.com/abilash2574/Zeyrie-Blog/tree/main/content"
+    improveArticle = "https://github.com/abilash2574/Zeyrie-Blog/tree/main/content/posts"
     # FeelIt NEW | 0.2.4
     # whether to show the full text content in RSS
     rssFullText = false
