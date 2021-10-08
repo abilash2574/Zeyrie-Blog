@@ -1,7 +1,7 @@
 ---
 title: "How to Install Arch Linux"
 subtitle: ""
-date: 2021-09-22T23:01:27+05:30
+date: 2021-10-08T23:23:00+05:30
 lastmod: 2021-09-22T23:01:27+05:30
 draft: false
 author: "Abilash S"
