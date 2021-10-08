@@ -27,7 +27,7 @@ hiddenFromHomePage: false
 hiddenFromSearch: false
 ---
 
-In this tutorial, we will learn how to install arch linux. This can be used as a reference for installing vanilla arch linux. This tutorial will be a step by step guide and it will be install linux to a stage, where we can boot into the installed system. No further builds of environments, other packages will not be covered in this turorial
+In this tutorial, we will learn how to install arch linux. This can be used as a reference for installing vanilla arch linux. This tutorial will be a step by step guide to install linux to a stage, where we can boot into the installed system. No further builds of environments, other packages will not be covered in this turorial
 
 <!--more-->
 
@@ -38,7 +38,7 @@ So, lets first head to the official {{< link href="https://archlinux.org/downloa
 
 In this page, you have different options to download the image file for different purposes. Choose the one that suits your case. 
 
-This tutorial will complete until we install all the necessary packages and tools for our arch system to boot.
+This tutorial will be completed once we install all the necessary packages and tools for our arch system to boot.
 
 <!-- # Creating a Bootable installation media -->
 
@@ -49,7 +49,7 @@ This tutorial will complete until we install all the necessary packages and tool
 ## Setup the keyboard layout
 
 {{< admonition info "" >}}
-By default the keyboard layout is set to en-us!
+By default the keyboard layout is set to `en-us`!
 {{< /admonition >}}
 
 To list all the availabe keyboard layouts:
@@ -95,7 +95,7 @@ timedatectl status
 
 ## Partitioning the disk
 
-To partition our disk we are using fdisk, there are many other ways as well. But I am using the one recommended by arch wiki.
+To partition our disk we are using `fdisk`, there are many other ways as well. But I am using the one recommended by arch wiki.
 
 <div>
 <span style="color: red">Step 1 ->  </span> To list all the disks available, run `fdisk -l`.
@@ -110,7 +110,7 @@ fdisk /dev/the_disk_to_be_partitioned
 ```
 
 {{< admonition tip "" >}}
-If you need help using fdisk always remeber to check the help prompt by typing `m`
+If you need help using fdisk, always remember to check the help prompt by typing `m`
 {{< /admonition >}}
 
 After selecting a disk to work with, you will be taken to another prompt.
@@ -129,8 +129,8 @@ We can do that as follows:
 
 {{< admonition note "" >}}
 * A minimum of <span style="color: red">550 MB</span> is recommended for the boot partition.
-* Do enter the default value in the prompts just press enter.
-* A easy way to type the partition size in the prompt, use `+` follwed by the `desired size` and `M` for mebabytes, `G` for gigabytes, and so on. <span>Eg. +550M</span> represents 550 MB
+* To enter the default value in the prompts, press enter.
+* A easy way to type the partition size in the prompt, use `+` followed by the `desired size` and `M` for megabytes, `G` for gigabytes, and so on. <span>Eg. +550M</span> represents 550 MB
 {{< /admonition >}}
 
 <div>
@@ -144,24 +144,25 @@ So we will create a new partition as follows:
 {{< image src="pics/boot_partition.png" caption="Creating Boot partition">}}
 
 
-Now we much note that, the type of this partition is linux filesystems, but we need this to be a `FAT32` file system, so to convert the file system we use the `t` command in the prompt, as follows:
+Now we must note that, the type of this partition is linux filesystems, but we need this to be a `FAT32` file system, so to convert the file system we use the `t` command in the prompt, as follows:
 
 {{< image src="pics/change_filesystem.png" caption="Changing file system">}}
 
 
 {{< admonition tip  "" >}}
-To know all the filesystems available in fdisk, type `L` in the prompt asking for selecting a filesystem type
+To know all the filesystems available in fdisk, type `L` in the prompt, asking for selecting a filesystem type
 {{< /admonition >}}
 
 
 <!-- add the image for changing file type of boot partition -->
 {{< image src="pics/efi_file.png" caption="Changed file system to EFI">}}
 
+</div>
 
 <div>
 <span style="color: red">Step 4 ->  </span> Creating a swap partition
 
-Next we want a swap partition for our system, and it is recommended to have a swap partition even if you have more than enough RAM, but in end its upto you to create this partition.
+Next, we want a swap partition for our system, and it is recommended to have a swap partition even if you have more than enough RAM, but in end its upto you to create this partition.
 
 Create another partition with size of your choice, I have created a swap of size `2 GB`.
 
@@ -185,7 +186,7 @@ Next we will create a `root` partition of our choice:
 {{< image src="pics/root_partition.png" caption="Creating root partition">}}
 
 
-Since the file type for the root parition is to be linux filetype, we leave it unchanged
+Since the file type for the root parition is to be linux filesystem, we leave it unchanged
 </div>
 
 <div>
@@ -209,6 +210,7 @@ To write all the changes and quit fdisk press `w`, which will write our changes.
 
 
 </div>
+
 
 ## Defining File Systems
 
@@ -240,7 +242,7 @@ To check if you have everything setup correctly, run `fdisk -l` or `lsblk`.
 
 ## Installing Linux
 
-To installing the base installation packages, run the follwoing:
+To install the base installation packages, run the following:
 
 ```sh 
 pacstrap /mnt base linux linux-firmware
@@ -253,13 +255,13 @@ After installing the packages, we are going to generate the `fstab` for our syst
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
-We can verify if the partitions we have created by running:
+We can verify the partitions we have created by running:
 
 ```sh
 cat /mnt/etc/fstab
 ```
 
-Now we will move to the installation drive or our system by running the following:
+Now we will move to the installation drive for our system by running the following:
 
 ```sh 
 arch-chroot /mnt
@@ -267,7 +269,7 @@ arch-chroot /mnt
 
 ### Setting Time zone
 
-We can set the time zone to our system by running the following command:
+We can set the time zone for our system by running the following command:
 
 ```sh 
 # ln -sf /usr/share/zoneinfo/REGION/CITY /etc/localtime
@@ -275,12 +277,13 @@ We can set the time zone to our system by running the following command:
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 ```
 
-To actually fine the region and city we can `ls` to the `zoneinfo` dir as follows:
+To actually find the region and city we can `ls` to the `zoneinfo` directory as follows:
 
 ```sh
 ls /usr/share/zoneinfo          # this will list all the zones
 ls /usr/share/zoneinfo/REGION   # this will list all the cities in that region (Change region with actual folder from the above list )
 ``` 
+
 ### Setting Hardware clock
 
 To set the hardware clock run the following:
@@ -291,7 +294,7 @@ hwclock --systohc
 
 ### Setting Locale
 
-Now we must set the locale file, but before this, we must install a editor of our choice to open the `loacle.gen` file. To do so:
+Now we must set the locale file, but before this, we must install an editor of our choice to open the `locale.gen` file. To do so:
 
 ```sh
 pacman -S nano # or vim
@@ -332,7 +335,7 @@ Next we will create a hostfile as follows:
 nano /etc/hosts
 ```
 
-This file will note be empty and we must add the following lines
+This file will not be empty and we must add the following lines at the end of the file
 
 {{< highlight code >}}
 127.0.0.1	localhost
@@ -342,7 +345,7 @@ This file will note be empty and we must add the following lines
 
 ### Creating Root and User
 
-Now we will create a password for out root user, we do that as follows:
+Now we will create a password for the root user, we do that as follows:
 
 ```sh
 passwd
@@ -365,7 +368,7 @@ Now, we have to give user privileges to the newly created user, we can do that a
 usermod -aG wheel,audio,video,optical,storage user_name   # we can add more privileges as well
 ```
 
-Now we must install sudo to give sudo privileges to the user
+Now we must install `sudo` to give sudo privileges to the user
 
 ```sh 
 pacman -S sudo
@@ -377,7 +380,7 @@ To give the sudo privileges to user, we will edit the `visudo` file:
 EDITOR=nano visudo          # to use vim EDITOR=vim visudo
 ```
 
-Now we must find the line about wheel group.
+Now we must find the line about `wheel` group.
 
 {{< highlight code >}}
 %wheel ALL=(ALL) ALL
@@ -407,11 +410,11 @@ Next we must make a grub configuration file as follows:
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-Now we have generated grub config files, from this point we can reboot the system and use it further.
+Now we have generated grub configuration files, from this point we can reboot the system and use it further.
 
 {{< admonition tip "Bonus Tips" >}}
 
-It is a good choice to install some packages for new system such as network manger, and more.
+It is a good choice to install some packages for new the system such as network manger, and more.
 
 So, 
 
