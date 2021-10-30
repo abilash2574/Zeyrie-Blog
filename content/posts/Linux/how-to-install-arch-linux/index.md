@@ -393,7 +393,7 @@ Just uncomment the above line and save it.
 Now we must install grub, so firstly we must download grub installer, and along side, we need efi installers as well for the system so,
 
 ```sh 
-pacman -S grub efibootmgr dosfstools or-prober mtools
+pacman -S grub efibootmgr dosfstools os-prober mtools
 ```
 
 Now we will run the grub install command as follows:
